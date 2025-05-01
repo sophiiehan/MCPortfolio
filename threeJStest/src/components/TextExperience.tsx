@@ -38,7 +38,7 @@ export const TextExperience = () => {
                     <div className="flex w-3/4 h-screen items-center justify-center ml-48">
                         <BuildCard 
                             title="Tropical Castle Skeleton" 
-                            description="This Castle was inspired by a tropical block palette, featuring bright warm colors and a cool turquoise contrast. It features oriental style archways"
+                            description="This Castle was inspired by a tropical block palette, featuring bright warm colors and a cool turquoise contrast. It features oriental style archways."
                             />
                     </div>
                 </Scroll>
