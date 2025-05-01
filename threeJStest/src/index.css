@@ -7,3 +7,15 @@ body,html{
   margin: 0;
   padding: 0;
 }
+
+/* Hide scrollbar for WebKit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar width */
+  height: 0; /* Remove scrollbar height */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none; /* Hide scrollbar */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}

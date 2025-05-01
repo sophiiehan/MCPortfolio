@@ -8,7 +8,7 @@ import { useFrame } from "@react-three/fiber";
 import BuildCard from "./BuildCard.js";
 
 // Define and export a React functional component named "Experience"
-export const Experience = () => {
+export const TextExperience = () => {
 
     const meshRef = useRef<THREE.Mesh>(null); 
 
@@ -34,19 +34,14 @@ export const Experience = () => {
 
             {/* "Container" for a geometry shape */}
             <ScrollControls pages={2} damping={0.25}>
-
-                <mesh ref={meshRef} position={[20,-45,-80]}>
-                    <MaroonCastle />
-                    {/* JSX-based overlay that stays facing the camera */}
-                </mesh>
-                {/* <Scroll html>
-                    <div className="flex w-full h-screen items-center justify-center ml-28">
+                <Scroll html>
+                    <div className="flex w-3/4 h-screen items-center justify-center ml-48">
                         <BuildCard 
                             title="Tropical Castle Skeleton" 
                             description="This Castle was inspired by a tropical block palette, featuring bright warm colors and a cool turquoise contrast. It features oriental style archways"
                             />
                     </div>
-                </Scroll> */}
+                </Scroll>
             </ScrollControls>
         </>
 

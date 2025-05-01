@@ -4,24 +4,27 @@ import './index.css';
 import { Canvas } from '@react-three/fiber'
 import { Overlay } from "./components/TextOverlay.js";
 import BuildCard from "./components/BuildCard.js";
+import { Scroll } from "@react-three/drei";
+import { TextExperience } from "./components/TextExperience.js";
 
 function App() {
   return (
-    <div className="flex bg-gray-800 w-screen">
+    <div className="flex bg-gray-800 justify-end items-end overflow-hidden">
       {/* <Overlay /> */}
-      <div className="flex w-2/5 h-screen items-center justify-center ml-48">
-        <BuildCard 
-          title="Tropical Castle Skeleton" 
-          description=
-            "This Castle was inspired by a tropical block palette, featuring bright warm colors and a cool turquoise contrast. It features oriental style archways"/>
-      </div>
 
-      <div className="flex flex-col w-full h-screen">
+      <div className="flex w-full h-screen">
         <Canvas camera={{
           fov: 50,
           position: [120.3, -0.5, -120.3]
         }}>
-            <Experience />
+            <TextExperience />
+        </Canvas>
+
+        <Canvas camera={{
+          fov: 50,
+          position: [120.3, -0.5, -120.3]
+        }}>
+          <Experience />
         </Canvas>
        
       </div>
